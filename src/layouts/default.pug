@@ -1,0 +1,57 @@
+doctype html
+html(lang="pt-br")
+    head
+        //- Metas
+        //- ===========================================
+        meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
+        meta(charset="utf-8")
+
+        - let title = "André Van Dal"
+        - let description = "Tudo o que eu faço acaba aqui de alguma forma!"
+        - let websiteUrl = "https://derevandal.github.io/" 
+        - let websiteShareImg = websiteUrl + "assets/img/share.png"
+
+        //- SEO
+        meta(name="description" content=description)
+        meta(name="robots" content="index,follow")
+        title=title
+
+        //- Favicons
+        link(rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png")
+        link(rel="manifest" href="manifest.json")
+        link(rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#c23739")
+        meta(name="apple-mobile-web-app-title" content="Dia de Pizza")
+        meta(name="application-name" content="Dia de Pizza")
+        meta(name="msapplication-TileColor" content="#c23739")
+        meta(name="msapplication-TileImage" content="icons/mstile-144x144.png")
+        meta(name="theme-color" content="#c23739")
+
+        //- Open Graph
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=description)
+        meta(property="og:url" content=websiteUrl)
+        meta(property="og:image" content=websiteShareImg)
+
+        //- Twitter Cards
+        meta(name="twitter:card" content="summary_large_image")
+        meta(name="twitter:title" content=title)
+        meta(name="twitter:description" content=description)
+        meta(name="twitter:url" content=websiteUrl)
+        meta(name="twitter:image" content=websiteShareImg)
+
+        //-  Styles
+        //- ===========================================
+        link(rel="stylesheet" href="assets/styles/style.min.css")
+
+        //-  Fonts
+        //- ===========================================
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600")
+
+    body(data-senna)
+        block content
+
+        script(src="assets/scripts/script.js" async)
+        script(src="https://rawgit.com/jonathantneal/svg4everybody/master/dist/svg4everybody.min.js" async)

@@ -1,0 +1,21 @@
+phone-only()
+  @media (max-width: 599px)
+    {block}
+tablet-portrait-up()
+  @media (max-width: 900px)
+    {block}
+tablet-landscape-up()
+  @media (max-width: 1200px)
+    {block}
+desktop-up()
+  @media (max-width: 1800px)
+    {block}
+big-desktop-up()
+  @media (min-width: 1800px)
+    {block}
+
+column($col = 1)
+  width calc(100% * $col)
+
+border-dev()
+  border 2px dashed $quaternary_color
