@@ -1,12 +1,18 @@
 extends ./layouts/default.pug
 
 block content
-    .wrapper
-        header.header
-            h1 Hello World! =D
-        .sidebar
-            p sidebar
-        .content
-            p content
-        .footer
-            p footer
+    section.superFold
+        video(controls="" id='video-player' class="superFold__video" preload='metadata' autoplay loop)
+            source(src="./assets/tech-clip.mp4" type="video/mp4")
+            //- source(src="./assets/tech-clip.webm" type="video/webm")
+            //- source(src="./assets/tech-clip.ogv" type="video/ogg")
+        h1.superFold__title André Van Dal
+        menu.superFold__menu
+            li.superFold__item
+                a(href="#").superFold__link Blog
+            li.superFold__item
+                a(href="#").superFold__link Portifólio
+            li.superFold__item
+                a(href="#").superFold__link Sobre mim
+            li.superFold__item
+                a(href="#").superFold__link Contato
