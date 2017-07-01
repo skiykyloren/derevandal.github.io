@@ -1,22 +1,13 @@
-@import 'partials/variables.styl'
-@import 'partials/mixins.styl'
+@import 'partials/variables'
+@import 'partials/mixins'
 
-@import 'partials/font-face.styl'
+@import 'partials/font-face'
 
 @import '../../../node_modules/nib/'
 
 normalize-css()
 
-::-webkit-scrollbar
-  width .6em
-  
-::-webkit-scrollbar-thumb
-  background lighten(black, 10%)
-  transition 1s all
-
-::-webkit-scrollbar-track
-  background lighten(black, 60%)
-
+@import 'partials/scroll'
 
 *
   box-sizing border-box
@@ -28,30 +19,6 @@ img
   width 100%
   height 100%
 
+@import 'partials/responsive'
 
-.wrapper
-  display grid
-  grid-template-columns 1fr 1fr 1fr
-  grid-template-rows 1fr 1fr 1fr
-  grid-template-areas "header  header  header" "sidebar content content" "footer  footer  footer"
-  grid-gap 5px 5px
-
-.header
-  grid-area header
-  font-family 'Futura Md BT', "Arial", sans-serif
-  color red
-
-.sidebar
-  grid-area sidebar
-
-.content
-  grid-area content
-  position relative
-
-.header
-  grid-area header
-
-.footer
-  grid-area footer
-
-@import 'partials/superFold.styl'
+@import 'partials/superFold'

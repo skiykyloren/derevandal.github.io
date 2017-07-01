@@ -2,21 +2,17 @@ extends ./layouts/default.pug
 
 block content
     section.superFold
-        video#video-playero.superFold__video(preload='metadata' autoplay loop)
-            source(src="./assets/tech-clip.mp4" type="video/mp4")
-            source(src="./assets/tech-clip.webm" type="video/webm")
-            source(src="./assets/tech-clip.ogv" type="video/ogg")
-        div.superFold__overlay
         header.superFold__header
             h1.superFold__title André Van Dal
             h2.superFold__subtitle desenvolvimento, marketing & consultoria
 
-        menu.superFold__menu
-            li.superFold__item
-                a(href="#").superFold__link Blog
-            li.superFold__item
-                a(href="#").superFold__link Portifólio
-            li.superFold__item
-                a(href="#").superFold__link Sobre mim
-            li.superFold__item
-                a(href="#").superFold__link Contato
+        div.superFold__menu
+            ul.superFold__list
+                li.superFold__item
+                    a(href="#").superFold__link Blog
+                li.superFold__item
+                    a(href="#").superFold__link Portifólio
+                li.superFold__item
+                    a(href="#").superFold__link Sobre mim
+                li.superFold__item
+                    a(href="#").superFold__link Contato
