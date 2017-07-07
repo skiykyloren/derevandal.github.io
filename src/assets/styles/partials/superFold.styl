@@ -14,8 +14,12 @@
                         ". header header header header header header ."\
                         ". . . . . . . ."\
                         ". . . . . . . ."\
-                        "footer footer footer footer footer footer footer footer";
-    background lighten($color__one, 31)
+                        "footer footer footer footer footer footer footer footer"
+    background-image url(../img/background-lasvegas-1920px.jpg)
+    background-position center center
+    background-clip content-box
+    background-size cover
+    background-attachment fixed
 .superFold__header
     display flex
     flex-direction column
@@ -27,6 +31,7 @@
     font-size 10vw
     text-align center
     color $color__three
+    text-shadow 2px 2px 0 $color__one
     margin 0 auto
 .superFold__subtitle
     font-family 'Futura Md BT', 'Arial', sans-serif
@@ -34,7 +39,8 @@
     // font-size 25px
     text-align center
     margin 0 auto
-    color $color__three
+    color $color__one
+    text-shadow 2px 2px 2px $color__five
     position relative
     &:before
         content " "
@@ -51,7 +57,6 @@
     margin 0
     padding 0
     justify-content space-between
-    background $color__five
     grid-area footer
 .superFold__item
     display table-cell

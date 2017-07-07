@@ -176,36 +176,23 @@ gulp.task('responsive', () => {
         .pipe($.plumber())
         .pipe($.responsive({
             'background-*.jpg': [{
-                width: 300
-                , rename: { suffix: '-300px' }
-                , withMetadata: false
-            }, { 
-                width: 600
-                , rename: { suffix: '-600px' }
+                width: 576
+                , rename: { suffix: '-576px' }
                 , withMetadata: false
             }, {
-                width: 900
-                , rename: { suffix: '-900px' }
+                width: 768
+                , rename: { suffix: '-768px' }
+                , withMetadata: false
+            }, {
+                width: 992
+                , rename: { suffix: '-992px' }
                 , withMetadata: false
             }, {
                 width: 1200
                 , rename: { suffix: '-1200px' }
                 , withMetadata: false
             }, {
-                width: 1800
-                , rename: { suffix: '-1800px' }
-                , withMetadata: false
-            }, {
-                rename: { suffix: '' }
-                , withMetadata: false
-            }]
-            , 'pizza-*.png': [{
-                width: 286
-                , rename: { suffix: '' }
-                , withMetadata: false
-            }, {
-                width: 572
-                , rename: { suffix: '-2x' }
+                rename: { suffix: '-1920px' }
                 , withMetadata: false
             }]
         }))
