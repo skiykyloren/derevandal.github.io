@@ -7,7 +7,7 @@
   "author": "André Van Dal <derevandal@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "babel-preset-babili": "^0.1.2",
+    "babel-preset-babili": "^0.1.4",
     "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.18.12",
     "font-awesome-stylus": "^4.7.1",
