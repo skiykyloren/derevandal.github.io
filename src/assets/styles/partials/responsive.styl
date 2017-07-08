@@ -1,28 +1,63 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px)
-    .container
-        width 90%
-        max-width 550px
+    .superFold
+        background-image url(../img/background-lasvegas-576px.jpg)
+    .superFold__title
+        font-size 14vw
+    .superFold__subtitle
+        font-size 4vw
+    .superFold__link
+        font-size 1.5em
+    .superFold
+        grid-template-areas "header header header" "header header header" "header header header" "footer footer footer "
+        background-image url(../img/background-lasvegas-576px.jpg)
+    .superFold__menu
+        flex-wrap wrap
+    .superFold__item
+        width 50%
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px)
-    .container
-        width 90%
-        max-width 750px
+    .superFold
+        background-image url(../img/background-lasvegas-768px.jpg)
+    .superFold__title
+        font-size 14vw
+    .superFold__subtitle
+        font-size 2.5vw
+    .superFold__link
+        font-size 1.8em
+    .superFold
+        grid-template-areas "header header header" "header header header" "header header header" "footer footer footer "
+        background-image url(../img/background-lasvegas-576px.jpg)
+    .superFold__menu
+        flex-wrap wrap
+    .superFold__item
+        width 50%
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px)
-    .container
-        width 90%
-        max-width 950px
+    .superFold
+        background-image url(../img/background-lasvegas-992px.jpg)
+    .superFold__title
+        font-size 14vw
+    .superFold__subtitle
+        font-size 2.2vw
+    .superFold__link
+        font-size 1.8em
+    .superFold
+        grid-template-areas "header header header" "header header header" "header header header" "footer footer footer "
+        background-image url(../img/background-lasvegas-576px.jpg)
+    .superFold__menu
+        flex-wrap wrap
+    .superFold__item
+        width 50%
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px)
-    .container
-        width 90%
-        max-width 1000px
+    .superFold
+        background-image url(../img/background-lasvegas-1200px.jpg)
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
-    body
-        font-size 10px
+    .superFold
+        background-image url(../img/background-lasvegas-1920px.jpg)

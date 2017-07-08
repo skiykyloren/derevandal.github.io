@@ -6,16 +6,8 @@
     display grid
     grid-template-columns auto
     grid-template-rows auto
-    grid-template-areas ". . . . . . . ."\
-                        ". . . . . . . ."\
-                        ". header header header header header header ."\
-                        ". header header header header header header ."\
-                        ". header header header header header header ."\
-                        ". header header header header header header ."\
-                        ". . . . . . . ."\
-                        ". . . . . . . ."\
-                        "footer footer footer footer footer footer footer footer"
-    background-image url(../img/background-lasvegas-1920px.jpg)
+    grid-template-areas ". . . . . . . ."  ". . . . . . . ." ". header header header header header header ." ". header header header header header header ." ". header header header header header header ." ". header header header header header header ." ". . . . . . . ." ". . . . . . . ." "footer footer footer footer footer footer footer footer"
+    background-color darken($color__five, 20)
     background-position center center
     background-clip content-box
     background-size cover
@@ -67,12 +59,18 @@
     align-items center
     width 100%
     height 100%
-    font-family 'Futura Md BT', 'Arial', sans-serif
+    font-family 'Futura Bk BT', 'Arial', sans-serif
     color $color__one
     text-decoration none
     font-size calc(20vw / 6)
     font-variant small-caps
     transition .2s ease-in-out all
+    .icon
+        width 1.2em
+        height 1.2em
+        margin auto .4em auto 0
+
+    
     &:hover
         background-color $color__one
         color $color__five

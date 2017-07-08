@@ -1,17 +1,29 @@
 extends ./layouts/default.pug
 
 block content
-    section.superFold
-        header.superFold__header
+    section.superFold.bg-center-fixed
+        header.superFold__header.bg-center-fixed
             h1.superFold__title André Van Dal
             h2.superFold__subtitle desenvolvimento, marketing e consultoria
 
         menu.superFold__menu
             li.superFold__item
-                a(href="#").superFold__link Blog
+                a(href="/blog/").superFold__link
+                    svg.icon.icon-blog(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#blog")
+                    span /blog
             li.superFold__item
-                a(href="#").superFold__link Portifólio
+                a(href="/projects.html").superFold__link
+                    svg.icon.icon-projects(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#projects")
+                    span /projetos
             li.superFold__item
-                a(href="#").superFold__link Sobre mim
+                a(href="/about.html").superFold__link
+                    svg.icon.icon-about(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#about")
+                    span /sobre
             li.superFold__item
-                a(href="#").superFold__link Contato
+                a(href="/contact.html").superFold__link
+                    svg.icon.icon-contact(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#contact")
+                    span /contato
