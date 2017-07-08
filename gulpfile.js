@@ -31,7 +31,7 @@ const basePaths = {
 
 const Paths = {
     images: {
-        loader: [basePaths.src + 'assets/img/**/*.*', '!' + basePaths.src + 'assets/img/background-*.jpg', '!' + basePaths.src + 'assets/img/pizza-*.png']
+        loader: [basePaths.src + 'assets/img/**/*.*', '!' + basePaths.src + 'assets/img/background-*.jpg']
         , dest: basePaths.dest + 'assets/img/'
         , watch: [basePaths.src + 'assets/img/**/*.*']
     }
@@ -106,7 +106,7 @@ const Config = {
             , open: false
         }
     }
-    , build: ['svgsprite', 'pug', 'stylint', 'stylus', 'imagemin', 'lint', 'babel']
+    , build: ['responsive', 'svgsprite', 'pug', 'stylint', 'stylus', 'imagemin', 'lint', 'babel']
     , server: ['build','browserSync','watch']
 }
 
@@ -192,11 +192,12 @@ gulp.task('responsive', () => {
                 , rename: { suffix: '-1200px' }
                 , withMetadata: false
             }, {
-                rename: { suffix: '-1920px' }
+                width: 1920
+                , rename: { suffix: '-1920px' }
                 , withMetadata: false
             }]
         }))
-        .pipe($.imagemin(Config.imagemin))
+        .pipe($.imagemin())
         .pipe($.plumber.stop())
         .pipe(gulp.dest(Paths.images.dest))
 })
@@ -204,7 +205,7 @@ gulp.task('responsive', () => {
 gulp.task('imagemin', () => {
     gulp.src(Paths.images.loader)
         .pipe($.plumber())
-        .pipe($.imagemin(Config.imagemin))
+        .pipe($.imagemin())
         .pipe($.plumber.stop())
         .pipe(gulp.dest(Paths.images.dest))
 })
@@ -223,7 +224,7 @@ gulp.task('browserSync', () => {
 
 gulp.task('clean', () => {
     gulp.src('assets/**/*.*', {read: false})
-    .pipe($.clean())
+        .pipe($.clean())
 })
 
 gulp.task('build', Config.build)
