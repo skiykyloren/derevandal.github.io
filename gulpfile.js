@@ -106,7 +106,7 @@ const Config = {
             , open: false
         }
     }
-    , build: ['responsive', 'svgsprite', 'pug', 'stylint', 'stylus', 'imagemin', 'lint', 'babel']
+    , build: ['svgsprite', 'pug', 'stylint', 'stylus', 'imagemin', 'lint', 'babel']
     , server: ['build','browserSync','watch']
 }
 
