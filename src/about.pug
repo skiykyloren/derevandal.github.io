@@ -1,8 +1,8 @@
 extends ./layouts/default.pug
 block seo
-    - let title = "Página Inicial - André Van Dal"
-    - let description = "Desenvolvimento, marketing e consultoria são meu ponto forte! Acompanhe meu blog e conheça meus prejetos."
-    - let websiteUrl = "https://derevandal.github.io/" 
+    - let title = "Sobre - André Van Dal"
+    - let description = "Conheça mais a respeito de André Van Dal"
+    - let websiteUrl = "https://derevandal.github.io/about.html" 
     - let websiteShareImg = websiteUrl + "assets/img/share.png"
 
     //- SEO
@@ -23,31 +23,35 @@ block seo
     meta(name="twitter:description" content=description)
     meta(name="twitter:url" content=websiteUrl)
     meta(name="twitter:image" content=websiteShareImg)
-
 block content
-    section.superFold.bg-center-fixed
-        header.superFold__header.bg-center-fixed
-            h1.superFold__title André Van Dal
-            h2.superFold__subtitle desenvolvimento, marketing e consultoria
-
-        menu.superFold__menu
-            li.superFold__item
-                a(href="/blog/").superFold__link
+    header.header
+        a(href="/").header__logo
+            h1 André Van Dal
+        menu.header__menu
+            li.header__item
+                a(href="/blog/").header__link
                     svg.icon.icon-blog(aria-hidden="true")
                             use(xlink:href="assets/img/sprite.svg#blog")
                     span /blog
-            li.superFold__item
-                a(href="/projects.html").superFold__link
+            li.header__item
+                a(href="/projects.html").header__link
                     svg.icon.icon-projects(aria-hidden="true")
                             use(xlink:href="assets/img/sprite.svg#projects")
                     span /projetos
-            li.superFold__item
-                a(href="/about.html").superFold__link
+            li.header__item
+                a(href="/about.html").header__link
                     svg.icon.icon-about(aria-hidden="true")
                             use(xlink:href="assets/img/sprite.svg#about")
                     span /sobre
-            li.superFold__item
-                a(href="/contact.html").superFold__link
+            li.header__item
+                a(href="/contact.html").header__link
                     svg.icon.icon-contact(aria-hidden="true")
                             use(xlink:href="assets/img/sprite.svg#contact")
                     span /contato
+    section.section
+        header.section__header
+            h1.section__title André Van Dal por André Van Dal
+        article.article
+        footer.footer Feito com :hear: por
+            a(href="https://derevandal.github.io/?utm-source=footer") André Van Dal
+            | .

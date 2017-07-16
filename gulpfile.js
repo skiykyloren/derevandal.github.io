@@ -180,20 +180,92 @@ gulp.task('responsive', () => {
                 , rename: { suffix: '-576px' }
                 , withMetadata: false
             }, {
+                width: 720
+                , rename: { suffix: '-720px' }
+                , withMetadata: false
+            }, {
                 width: 768
                 , rename: { suffix: '-768px' }
                 , withMetadata: false
+            },{
+                width: 864
+                , rename: { suffix: '-864px' }
+                , withMetadata: false
             }, {
+                width: 960
+                , rename: { suffix: '-960px' }
+                , withMetadata: false
+            },{
                 width: 992
                 , rename: { suffix: '-992px' }
+                , withMetadata: false
+            }, {
+                width: 1152
+                , rename: { suffix: '-1152px' }
                 , withMetadata: false
             }, {
                 width: 1200
                 , rename: { suffix: '-1200px' }
                 , withMetadata: false
             }, {
+                width: 1240
+                , rename: { suffix: '-1240px' }
+                , withMetadata: false
+            }, {
+                width: 1536
+                , rename: { suffix: '-1536px' }
+                , withMetadata: false
+            }, {
+                width: 1488
+                , rename: { suffix: '-1488px' }
+                , withMetadata: false
+            }, {
+                width: 1500
+                , rename: { suffix: '-1500px' }
+                , withMetadata: false
+            }, {
+                width: 1728
+                , rename: { suffix: '-1728px' }
+                , withMetadata: false
+            }, {
+                width: 1800
+                , rename: { suffix: '-1800px' }
+                , withMetadata: false
+            }, {
                 width: 1920
                 , rename: { suffix: '-1920px' }
+                , withMetadata: false
+            }, {
+                width: 1984
+                , rename: { suffix: '-1984px' }
+                , withMetadata: false
+            }, {
+                width: 2304
+                , rename: { suffix: '-2304px' }
+                , withMetadata: false
+            }, {
+                width: 2400
+                , rename: { suffix: '-2400px' }
+                , withMetadata: false
+            }, {
+                width: 2880
+                , rename: { suffix: '-2880px' }
+                , withMetadata: false
+            }, {
+                width: 2976
+                , rename: { suffix: '-2976px' }
+                , withMetadata: false
+            }, {
+                width: 3600
+                , rename: { suffix: '-3600px' }
+                , withMetadata: false
+            }, {
+                width: 3840
+                , rename: { suffix: '-3840px' }
+                , withMetadata: false
+            }, {
+                width: 3600
+                , rename: { suffix: '-5760px' }
                 , withMetadata: false
             }]
         }))
