@@ -1,6 +1,6 @@
 {
   "name": "derevandal.github.io",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "My personal website.",
   "main": "index.js",
   "repository": "git@github.com:derevandal/derevandal.github.io.git",
