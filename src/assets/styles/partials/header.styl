@@ -1,0 +1,47 @@
+.header
+    background darken($color__five, 20)
+    justify-content space-between
+    height 15vh
+.header__logo
+    font-family 'Futura Md BT', 'Arial', sans-serif
+    font-size 2em
+    text-align center
+    color $color__two
+    text-decoration none
+    padding 0 .5em
+    transition .2s ease-in-out all
+    align-self center
+    &:hover
+        color $color__one
+    h1
+        margin 0
+.header__menu
+    width 50vw
+    display flex
+    list-style none
+    margin 0
+    padding 0
+    justify-content space-between
+    grid-area footer
+.header__item
+    display table-cell
+    width 25%
+.header__link
+    display flex
+    justify-content center
+    align-items center
+    width 100%
+    height 100%
+    font-family 'Futura Bk BT', 'Arial', sans-serif
+    color $color__one
+    text-decoration none
+    font-size 1.8em
+    font-variant small-caps
+    transition .2s ease-in-out all
+    .icon
+        width 1.2em
+        height 1.2em
+        margin auto .4em auto 0
+    &:hover, &.actived
+        background-color $color__one
+        color $color__five

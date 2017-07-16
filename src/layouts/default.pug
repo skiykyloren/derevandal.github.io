@@ -6,16 +6,6 @@ html(lang="pt-br")
         meta(name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0")
         meta(charset="utf-8")
 
-        - let title = "André Van Dal"
-        - let description = "Tudo o que eu faço acaba aqui de alguma forma!"
-        - let websiteUrl = "https://derevandal.github.io/" 
-        - let websiteShareImg = websiteUrl + "assets/img/share.png"
-
-        //- SEO
-        meta(name="description" content=description)
-        meta(name="robots" content="index,follow")
-        title=title
-
         //- Favicons
         link(rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png")
         link(rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png")
@@ -28,20 +18,9 @@ html(lang="pt-br")
         meta(name="msapplication-TileImage" content="icons/mstile-144x144.png")
         meta(name="theme-color" content="#1d628b")
 
-        //- Open Graph
-        meta(property="og:type" content="website")
-        meta(property="og:title" content=title)
-        meta(property="og:description" content=description)
-        meta(property="og:url" content=websiteUrl)
-        meta(property="og:image" content=websiteShareImg)
-
-        //- Twitter Cards
-        meta(name="twitter:card" content="summary_large_image")
-        meta(name="twitter:title" content=title)
-        meta(name="twitter:description" content=description)
-        meta(name="twitter:url" content=websiteUrl)
-        meta(name="twitter:image" content=websiteShareImg)
-
+        
+        block seo
+        
         //-  Styles
         //- ===========================================
         link(rel="stylesheet" href="assets/styles/style.min.css")
@@ -53,13 +32,13 @@ html(lang="pt-br")
 
         //-  Google Tag Manager
         //- ===========================================
-        script.
-            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-M5F6VXM');
+        //- script.
+        //-     (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-M5F6VXM');
 
     body(data-senna)
         //-  Google Tag Manager (noscript)
-        noscript
-            iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-M5F6VXM" height="0" width="0" style="display:none;visibility:hidden")
+        //- noscript
+        //-     iframe(src="https://www.googletagmanager.com/ns.html?id=GTM-M5F6VXM" height="0" width="0" style="display:none;visibility:hidden")
 
         block content
 

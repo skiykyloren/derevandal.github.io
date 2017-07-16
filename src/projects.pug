@@ -1,0 +1,39 @@
+extends ./layouts/default.pug
+block seo
+    - let title = "Projetos - André Van Dal"
+    - let description = "Além de projetos da comunidade, ainda há meus projetos pessoais."
+    - let websiteUrl = "https://derevandal.github.io/projects.html" 
+    - let websiteShareImg = websiteUrl + "assets/img/share.png"
+
+    //- SEO
+    meta(name="description" content=description)
+    meta(name="robots" content="index,follow")
+    title=title
+
+    //- Open Graph
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:url" content=websiteUrl)
+    meta(property="og:image" content=websiteShareImg)
+
+    //- Twitter Cards
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:url" content=websiteUrl)
+    meta(name="twitter:image" content=websiteShareImg)
+block content
+    - let actived = 'projects'
+    include ./partials/header.pug
+    section.section
+        header.section__header
+            h1.section__title André Van Dal por André Van Dal
+        article.article
+            p Olá, meu nome é André Van Dal e, atualmente tenho 20 anos.
+    footer.footer Feito com 
+        svg.icon.icon-contact(aria-hidden="true")
+                use(xlink:href="assets/img/sprite.svg#heart")
+        |  por 
+        a(href="https://derevandal.github.io/?utm-source=footer") André Van Dal
+        | .

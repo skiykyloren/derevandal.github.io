@@ -1,7 +1,9 @@
+.container
+    display flex
+    width 100%
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px)
-    .superFold
-        background-image url(../img/background-lasvegas-576px.jpg)
     .superFold__title
         font-size 14vw
     .superFold__subtitle
@@ -9,12 +11,47 @@
     .superFold__link
         font-size 1.5em
     .superFold
-        grid-template-areas "header header header" "header header header" "header header header" "footer footer footer "
+        grid-template-areas "header header header" "header header header" "header header header" "footer footer footer"
         background-image url(../img/background-lasvegas-576px.jpg)
     .superFold__menu
         flex-wrap wrap
     .superFold__item
         width 50%
+
+// 1.25dpi
+@media (max-width: 575px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-720px.jpg)
+// 1.5dpi
+@media (max-width: 575px) and (-webkit-max-device-pixel-ratio: 1.5) and (max-resolution: 144dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-864px.jpg)
+// 2dpi
+@media (max-width: 575px) and (-webkit-max-device-pixel-ratio: 2) and (max-resolution: 192dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1152px.jpg)
+// 3dpi
+@media (max-width: 575px) and (-webkit-max-device-pixel-ratio: 3) and (max-resolution: 328dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1728px.jpg)
+
+@media (max-width: 767px)
+    .header
+        height auto
+        flex-wrap wrap
+    .header__logo
+        width 80%
+        font-size 1.2em
+        margin auto
+        padding 0
+    .header__menu
+        width 100%
+        flex-direction row
+        flex-wrap wrap
+    .header__item
+        width 50%
+    .header__link
+        padding 5px
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px)
@@ -33,6 +70,23 @@
         flex-wrap wrap
     .superFold__item
         width 50%
+// 1.25dpi
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-960px.jpg)
+// 1.5dpi
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-max-device-pixel-ratio: 1.5) and (max-resolution: 144dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1152px.jpg)
+// 2dpi
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-max-device-pixel-ratio: 2) and (max-resolution: 192dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1536px.jpg)
+// 3dpi
+@media (min-width: 576px) and (max-width: 767px) and (-webkit-max-device-pixel-ratio: 3) and (max-resolution: 328dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-2304px.jpg)
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px)
@@ -51,13 +105,80 @@
         flex-wrap wrap
     .superFold__item
         width 50%
+// 1.25dpi
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1240px.jpg)
+// 1.5dpi
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-max-device-pixel-ratio: 1.5) and (max-resolution: 144dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1488px.jpg)
+// 2dpi
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-max-device-pixel-ratio: 2) and (max-resolution: 192dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1984px.jpg)
+// 3dpi
+@media (min-width: 768px) and (max-width: 991px) and (-webkit-max-device-pixel-ratio: 3) and (max-resolution: 328dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-2976px.jpg)
+
+@media (min-width: 767px) and (max-width: 1200px)
+    .header
+        height auto
+        flex-wrap wrap
+    .header__logo
+        width 80%
+        margin auto
+        padding 0
+    .header__menu
+        width 100%
+        flex-direction row
+        flex-wrap wrap
+    .header__item
+        width 25%
+    .header__link
+        padding 5px
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px)
     .superFold
         background-image url(../img/background-lasvegas-1200px.jpg)
+// 1.25dpi
+@media (min-width: 992px) and (max-width: 1199px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1500px.jpg)
+// 1.5dpi
+@media (min-width: 992px) and (max-width: 1199px) and (-webkit-max-device-pixel-ratio: 1.5) and (max-resolution: 144dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-1800px.jpg)
+// 2dpi
+@media (min-width: 992px) and (max-width: 1199px) and (-webkit-max-device-pixel-ratio: 2) and (max-resolution: 192dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-2400px.jpg)
+// 3dpi
+@media (min-width: 992px) and (max-width: 1199px) and (-webkit-max-device-pixel-ratio: 3) and (max-resolution: 328dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-3600px.jpg)
+
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px)
     .superFold
         background-image url(../img/background-lasvegas-1920px.jpg)
+// 1.25dpi
+@media (min-width: 1200px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-2400px.jpg)
+// 1.5dpi
+@media (min-width: 1200px) and (-webkit-max-device-pixel-ratio: 1.5) and (max-resolution: 144dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-2880px.jpg)
+// 2dpi
+@media (min-width: 1200px) and (-webkit-max-device-pixel-ratio: 2) and (max-resolution: 192dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-3840px.jpg)
+// 3dpi
+@media (min-width: 1200px) and (-webkit-max-device-pixel-ratio: 3) and (max-resolution: 328dpi)
+    .superFold
+        background-image url(../img/background-lasvegas-5760px.jpg)
+        

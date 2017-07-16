@@ -1,4 +1,28 @@
 extends ./layouts/default.pug
+block seo
+    - let title = "Página Inicial - André Van Dal"
+    - let description = "Desenvolvimento, marketing e consultoria são meu ponto forte! Acompanhe meu blog e conheça meus prejetos."
+    - let websiteUrl = "https://derevandal.github.io/" 
+    - let websiteShareImg = websiteUrl + "assets/img/share.png"
+
+    //- SEO
+    meta(name="description" content=description)
+    meta(name="robots" content="index,follow")
+    title=title
+
+    //- Open Graph
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=title)
+    meta(property="og:description" content=description)
+    meta(property="og:url" content=websiteUrl)
+    meta(property="og:image" content=websiteShareImg)
+
+    //- Twitter Cards
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content=title)
+    meta(name="twitter:description" content=description)
+    meta(name="twitter:url" content=websiteUrl)
+    meta(name="twitter:image" content=websiteShareImg)
 
 block content
     section.superFold.bg-center-fixed
