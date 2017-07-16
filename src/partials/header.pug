@@ -1,0 +1,42 @@
+header.header.container
+    a(href="/").header__logo
+        h1 André Van Dal
+    menu.header__menu
+        li.header__item
+            a(href="/blog/").header__link.icon
+                svg.icon.icon-blog(aria-hidden="true")
+                        use(xlink:href="assets/img/sprite.svg#blog")
+                span /blog
+        li.header__item
+            if actived == 'projects'
+                a(href="/projects.html").header__link.actived
+                    svg.icon.icon-projects(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#projects")
+                    span /projetos
+            else
+                a(href="/projects.html").header__link
+                    svg.icon.icon-projects(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#projects")
+                    span /projetos
+        li.header__item
+            if actived == 'about'
+                a(href="/about.html").header__link.actived
+                    svg.icon.icon-about(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#about")
+                    span /sobre
+            else 
+                a(href="/about.html").header__link
+                    svg.icon.icon-about(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#about")
+                    span /sobre
+        li.header__item
+            if actived == 'contact'
+                a(href="/contact.html").header__link.actived
+                    svg.icon.icon-contact(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#contact")
+                    span /contato
+            else 
+                a(href="/contact.html").header__link
+                    svg.icon.icon-contact(aria-hidden="true")
+                            use(xlink:href="assets/img/sprite.svg#contact")
+                    span /contato

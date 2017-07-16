@@ -1,8 +1,8 @@
 extends ./layouts/default.pug
 block seo
-    - let title = "Sobre - André Van Dal"
-    - let description = "Apenas um pouco da minha ainda curta vida."
-    - let websiteUrl = "https://derevandal.github.io/about.html" 
+    - let title = "Projetos - André Van Dal"
+    - let description = "Além de projetos da comunidade, ainda há meus projetos pessoais."
+    - let websiteUrl = "https://derevandal.github.io/projects.html" 
     - let websiteShareImg = websiteUrl + "assets/img/share.png"
 
     //- SEO
@@ -24,7 +24,7 @@ block seo
     meta(name="twitter:url" content=websiteUrl)
     meta(name="twitter:image" content=websiteShareImg)
 block content
-    - let actived = 'about'
+    - let actived = 'projects'
     include ./partials/header.pug
     section.section
         header.section__header
