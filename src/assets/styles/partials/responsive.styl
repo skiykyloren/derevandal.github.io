@@ -1,3 +1,7 @@
+.container
+    display flex
+    width 100%
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px)
     .superFold__title
@@ -13,6 +17,7 @@
         flex-wrap wrap
     .superFold__item
         width 50%
+
 // 1.25dpi
 @media (max-width: 575px) and (-webkit-max-device-pixel-ratio: 1.25) and (max-resolution: 120dpi)
     .superFold
@@ -30,6 +35,23 @@
     .superFold
         background-image url(../img/background-lasvegas-1728px.jpg)
 
+@media (max-width: 767px)
+    .header
+        height auto
+        flex-wrap wrap
+    .header__logo
+        width 80%
+        font-size 1.2em
+        margin auto
+        padding 0
+    .header__menu
+        width 100%
+        flex-direction row
+        flex-wrap wrap
+    .header__item
+        width 50%
+    .header__link
+        padding 5px
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px)
@@ -100,6 +122,22 @@
     .superFold
         background-image url(../img/background-lasvegas-2976px.jpg)
 
+@media (min-width: 767px) and (max-width: 1200px)
+    .header
+        height auto
+        flex-wrap wrap
+    .header__logo
+        width 80%
+        margin auto
+        padding 0
+    .header__menu
+        width 100%
+        flex-direction row
+        flex-wrap wrap
+    .header__item
+        width 25%
+    .header__link
+        padding 5px
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px)
